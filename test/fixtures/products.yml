@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  image_url: MyString
+  price: 9.99
+
+two:
+  title: MyString
+  description: MyText
+  image_url: MyString
+  price: 9.99
+
+ruby:
+  title: Spilvens
+  description:
+  	Spilvens ir mīksts
+  price: 9.99
+  image_url: http://ecx.images-amazon.com/images/I/71-M%2BdViygL._SL1500_.jpg
