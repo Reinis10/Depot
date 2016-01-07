@@ -13,8 +13,8 @@ two:
   price: 9.99
 
 ruby:
-  title: Spilvens
+  title: Pillow
   description:
-  	Spilvens ir mīksts
+   This pillow is very soft indeed
   price: 9.99
   image_url: http://ecx.images-amazon.com/images/I/71-M%2BdViygL._SL1500_.jpg

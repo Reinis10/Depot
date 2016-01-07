@@ -4,7 +4,7 @@ class ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
     @update = {
-      title: 'Palags', description: 'Tīrs palags', 
+      title: 'Sheet', description: 'A clean sheet', 
       image_url: 'http://www.percte.lv/Ecommerce/images/9ef0384cbea118c483651cacf2bbda4c.jpg',
       price: 6.99}
   end

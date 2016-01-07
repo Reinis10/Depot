@@ -2,8 +2,9 @@ class ProductTest < ActiveSupport::TestCase
 	fixtures :products
 test "product price must be positive" do
 	
-	product = Product.new (title: "Kumode", description: "Glabā lietas",
-		image_url:"http://www.furni.lv/image/cache/data/kumodes/malm-komoda--szuflad__0132188_PE286968_S4-600x600.JPG")
+	product = Product.new(title: "Closet", 
+							description: "Your best friend at hiding things",
+							image_url:"g.gif")
 	
 	product.price = -1
 	assert product.invalid?
@@ -19,19 +20,21 @@ test "product price must be positive" do
 	assert product.valid?
 end
 
-def new_product (image_url)
-
-	product.new (title:"Dīvāns", description:"Laba sēžamvieta", price: 149.99, image_url: image_url)
-
+def new_product(image_url)
+	Product.new(title:"Couch", 
+				description:"Good for your back and your bottom-side", 
+				price: 149.99, 
+				image_url: image_url)
 end
 
 test "image_url" do
 	
-	ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif }
+	ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg 
+			http://a.b.c/x/y/z/fred.gif }
 	bad = %w{ fred.doc fred.gif/more fred.gif.more }
 
 	ok.each do |name|
-		asser new_product(name).valid?, "#{name} should be valid"
+		assert new_product(name).valid?, "#{name} should be valid"
 	end
 
 	bad.each do |name|
@@ -40,8 +43,10 @@ test "image_url" do
 end
 
 test "product is not valid without a unique title - i18n" do
-	product = Product.new (title: products(:ruby).title, description: "Vārdi", price: 1, 
-		image_url: "https://image.freepik.com/free-icon/question-mark_318-52837.png")
+	product = Product.new(title: products(:ruby).title,
+							description: "Words go here",
+							price: 1,
+							image_url: "h.gif")
 	
 	assert product.invalid?
 	assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
