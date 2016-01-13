@@ -1,0 +1,9 @@
+Dear <%= @order.name %><br><br>
+
+Thank you for your recent order from our Furniture Store.<br><br>
+
+You ordered the following items:<br><br>
+
+<%= render @order.line_items -%><br><br>
+
+We'll send you a seperate e-mail when your order ships.
