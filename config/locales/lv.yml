@@ -1,4 +1,9 @@
 lv:
+  order:
+    payment_types:
+      check: "Čeks"
+      credit_card: "Kredītkarte"
+      purchase_order: "Skaidra nauda"
 
   thanks: "Paldies, ka izvēlējāties mūsu veikalu. Jūsu pasūtījums ir saglabāts!"
 
@@ -62,4 +67,8 @@ lv:
         email: "E-pasta"
         pay_type: "Maksāšanas tipam"
 
-
+  order:
+    payment_types:
+      check: "Čeks"
+      credit_card: "Kredītkarte"
+      purchase_order: "Skaidra nauda"
