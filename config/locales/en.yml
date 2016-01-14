@@ -20,4 +20,51 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
+ thanks: "Thank you for choosing our store! Your order is finalized!"
+
+ new_order: "New order"
+
+ layouts:
+   application:
+     title: "Furniture store"
+     home: "Home"
+     questions: "Questions"
+     news: "News"
+     contact: "Contact"
+
+ store:
+   index:
+     title_html: "Your friendly catalog"
+     add_html: "Add to Cart"
+
+ carts:
+   cart:
+     title: "Your cart"
+     empty: "Empty cart"
+     checkout: "Checkout"
+
+ number:
+   currency:
+     format:
+       unit: "$"
+       precision: 2
+       seperator: "."
+       delimiter: ","
+       format: "%u%n"
+
+ orders:
+   new:
+     legend: "Please Enter Your Details"
+     new_order: "New order"
+   form:
+     name: "Name"
+     address_html: "Address"
+     email: "E-mail"
+     pay_type: "Pay with"
+     pay_prompt_html: "Select a payment method"
+     submit: "Place order"
+
+ 
+
+
