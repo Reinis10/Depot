@@ -50,10 +50,10 @@ class LineItemsControllerTest < ActionController::TestCase
     assert_difference('LineItem.count') do
       xhr :post, :create, product_id: products(:ruby).id
     end
-
+    
     assert_response :success
     assert_select_jquery :html, '#cart' do
-      assert_select 'tr#current_item td', /sheet/
+      assert_select 'tr#current_item td', /Sheet/
     end
   end
 end
